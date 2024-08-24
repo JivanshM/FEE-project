@@ -1,11 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const burgerMenu = document.querySelector('.burger-menu');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  
-  burgerMenu.addEventListener('click', function () {
-      mobileMenu.classList.toggle('active');
+
+
+document.querySelector('.navbar-toggle').addEventListener('click', function() {
+    document.querySelector('.navbar-menu ul').classList.toggle('show');
   });
-});
+  
 
 document.addEventListener('DOMContentLoaded', function() {
   const scrollContainer = document.querySelector('.character-scroll');

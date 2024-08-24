@@ -8,8 +8,109 @@ body {
     margin: 0;
     padding: 0;
 }
+/* new navbar code */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.navbar-container {
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1c1c1c;
+}
+
+.navbar-logo img {
+    height: 60px; /*size*/
+    width: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.navbar-logo img:hover {
+    transform: scale(1.1); 
+}
+
+.navbar-menu ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center; 
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack icon above text */
+    align-items: center; 
+    text-align: center; /* Center text within the link */
+}
+
+.navbar-menu a i {
+    font-size: 20px; /* Icon size */
+    margin-bottom: 5px; /* Space between icon and text */
+}
+
+.navbar-menu a:hover {
+    color: #ffcc00; /* Hover color for both icon and text */
+}
+
+.navbar-icons a {
+    margin-left: 15px;
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+    transition: color 0.3s ease;
+}
+
+.navbar-icons a:hover {
+    color: #ffcc00; /* Hover color */
+}
+
+.navbar-toggle {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block; 
+    }
+    
+    .navbar-menu ul {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1c1c1c;
+        padding: 10px 0;
+    }
+
+    .navbar-menu ul.show {
+        display: flex;
+    }
+}
+
+
+/* old navabar code */
+/* .navbar-container {
     display: flex;
     position: fixed;
     width: 100%;
@@ -91,7 +192,7 @@ body {
     text-decoration: none;
     color: black;
     font-size: larger;
-}
+} */
 
 .hidden {
     display: none;
@@ -100,7 +201,7 @@ body {
 
 
 .content-container{
-    position: absolute;
+    position: flex;
     background-color: #f6f4fa;
     top: 10vh;
     width: 100%;
@@ -134,11 +235,11 @@ body {
 }
 
 .character-scroll::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
+    display: none; 
 }
 
 .inline-block {
-    flex-shrink: 0; /* Prevent shrinking of the images */
+    flex-shrink: 0; 
     width: auto;
 }
 
