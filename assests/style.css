@@ -1,4 +1,4 @@
-html{
+/* html{
     scroll-behavior: smooth;
 }
 
@@ -8,8 +8,7 @@ body {
     margin: 0;
     padding: 0;
 }
-/* new navbar code */
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Navbar styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,11 +29,11 @@ body {
 }
 
 .navbar-logo img {
-    height: 60px; /*size*/
-    width: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Animation for hover effect */
-}
-
+    height: 60px; 
+    width: auto; 
+    transition: transform 0.3s ease; 
+} */
+/* 
 .navbar-logo img:hover {
     transform: scale(1.1); 
 }
@@ -55,38 +54,37 @@ body {
     font-size: 14px;
     transition: color 0.3s ease;
     display: flex;
-    flex-direction: column; /* Stack icon above text */
+    flex-direction: column; 
     align-items: center; 
-    text-align: center; /* Center text within the link */
+    text-align: center; 
 }
 
 .navbar-menu a i {
-    font-size: 20px; /* Icon size */
-    margin-bottom: 5px; /* Space between icon and text */
+    font-size: 20px; 
+    margin-bottom: 5px; 
 }
 
 .navbar-menu a:hover {
-    color: #ffcc00; /* Hover color for both icon and text */
-}
+    color: #ffcc00; 
 
 .navbar-icons a {
     margin-left: 15px;
-    color: white; /* Icon color */
-    font-size: 20px; /* Icon size */
+    color: white; 
+    font-size: 20px; 
     transition: color 0.3s ease;
 }
 
 .navbar-icons a:hover {
-    color: #ffcc00; /* Hover color */
+    color: #ffcc00; 
 }
 
 .navbar-toggle {
-    display: none; /* Initially hidden */
+    display: none; 
     cursor: pointer;
     color: white;
     font-size: 24px;
-}
-
+} */
+/* 
 @media (max-width: 768px) {
     .navbar-toggle {
         display: block; 
@@ -106,7 +104,7 @@ body {
     .navbar-menu ul.show {
         display: flex;
     }
-}
+} */
 
 
 /* old navabar code */
@@ -193,7 +191,7 @@ body {
     color: black;
     font-size: larger;
 } */
-
+/* 
 .hidden {
     display: none;
 }
@@ -227,13 +225,13 @@ body {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    scrollbar-width: none; /* For Firefox */
+    scrollbar-width: none; 
     margin-left: 1vw;
     margin-right: 1vw;
     background-color: #f0f0f0;
     
-}
-
+} */
+/* 
 .character-scroll::-webkit-scrollbar {
     display: none; 
 }
@@ -276,33 +274,16 @@ body {
 }
 
 .scroll-1::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
+    display: none; 
 }
 
 
 .game-cover{
     width: 28vw;
     height: 15vw;
-}
+} */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 
 @media (max-width: 768px) {
     .navbar-container {
         justify-content: space-between;
@@ -319,7 +300,528 @@ body {
     .mobile-menu.active {
         display: block;
     }
-}
+} */
 
+
+
+/* new css */
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1c1c1c;
+  }
+  
+  .navbar-logo img {
+    height: 60px; /* Adjust the size as needed */
+    width: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+  }
+  
+  .navbar-logo img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  .navbar-menu ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center; /* Center-aligns items vertically */
+  }
+  
+  .navbar-menu li {
+    margin: 0 15px;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack icon above text */
+    align-items: center; /* Center icon and text horizontally */
+    text-align: center; /* Center text within the link */
+  }
+  
+  .navbar-menu a i {
+    font-size: 20px; /* Icon size */
+    margin-bottom: 5px; /* Space between icon and text */
+  }
+  
+  .navbar-menu a:hover {
+    color: #ffcc00; /* Hover color for both icon and text */
+  }
+  
+  .navbar-icons a {
+    margin-left: 15px;
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-icons a:hover {
+    color: #ffcc00; /* Hover color */
+  }
+  
+  .navbar-toggle {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-toggle {
+        display: block; /* Show toggle button on smaller screens */
+    }
+    
+    .navbar-menu ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1c1c1c;
+        padding: 10px 0;
+    }
+  
+    .navbar-menu ul.show {
+        display: flex; /* Show menu when toggle is active */
+    }
+  }
+  
+  .featured-games {
+  background-color: #ffcc00;
+  padding: 20px;
+  text-align: center;
+  width: 70%;
+  }
+  
+  .featured-games h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  }
+  
+  .slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  }
+  
+  .slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  }
+  
+  .game-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin: 20px;
+  }
+  
+  .game-card img {
+  width: 100%;
+  height: 200px;
+  object-fit:cover;
+  }
+  
+  .game-info {
+  padding: 15px;
+  }
+  
+  .game-info h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+  }
+  
+  .game-info p {
+  color: #666;
+  margin-top: 10px;
+  }
+  
+  /* Hide radio buttons */
+  input[type="radio"] {
+  display: none;
+  }
+  
+  /* Navigation Buttons */
+  .navigation {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  }
+  
+  .nav-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5em;
+  z-index: 10;
+  }
+  
+  .nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Slider Transitions */
+  #slide1:checked ~ .slider-wrapper {
+  transform: translateX(0%);
+  }
+  
+  #slide2:checked ~ .slider-wrapper {
+  transform: translateX(-100%);
+  }
+  
+  #slide3:checked ~ .slider-wrapper {
+  transform: translateX(-200%);
+  }
+  
+  /* Container for side-by-side layout */
+  .main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  }
+  
+  /* Leaderboard Styling */
+  .leaderboard {
+  width: 30%;
+  background: #4a90e2;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .leaderboard h2 {
+  margin-top: 0;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  }
+  
+  .leaderboard i {
+  font-size: 28px;
+  }
+  
+  .leaderboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .leaderboard li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding: 10px 0;
+  }
+  
+  .leaderboard li:last-child {
+  border-bottom: none;
+  }
+  
+  .leaderboard .icon {
+  font-size: 20px;
+  color: #ffd700; /* Gold color for rank icons */
+  margin-right: 10px;
+  }
+  
+  .leaderboard .name {
+  flex: 1;
+  }
+  
+  .leaderboard .points {
+  font-weight: bold;
+  }
+  
+  
+  
+  
+  .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image {
+    position: relative;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card-overlay video {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .card:hover .card-overlay {
+    opacity: 1;
+  }
+  
+  .card-content {
+    padding: 15px;
+    background: #fff;
+  }
+  
+  .card-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .card-content p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Character Carousel */
+  .character-carousel {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Full width of the container */
+  }
+  
+  .character-carousel h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-wrapper {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks inside the container */
+    padding: 10px 0; /* Vertical padding for aesthetics */
+  }
+  
+  .carousel {
+    display: inline-flex; /* Align items horizontally */
+    gap: 20px; /* Space between icons */
+  }
+  
+  .carousel img {
+    width: 100px; /* Size of each icon */
+    height: 100px; /* Size of each icon */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for icons */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .carousel img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+  
+  /* Character Carousel */
+  .character-carousel {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Full width of the container */
+  }
+  
+  .character-carousel h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-wrapper {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks inside the container */
+    padding: 10px 0; /* Vertical padding for aesthetics */
+  }
+  
+  .carousel {
+    display: inline-flex; /* Align items horizontally */
+    gap: 20px; /* Space between icons */
+  }
+  
+  .carousel img {
+    width: 100px; /* Size of each icon */
+    height: 100px; /* Size of each icon */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for icons */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .carousel img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+  
+  /* Optional: Hide scrollbar for a cleaner look */
+  .carousel-wrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+  }
+  
+  
+  
+  /* Voice Channels Section */
+  .voice-channels-section {
+    background-color: #e0f2f1; /* Light green background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .voice-channels-section h2 {
+    font-size: 2.5em;
+    color: #004d40; /* Darker green color */
+    margin-bottom: 20px;
+  }
+  
+  .channel-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .channel-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for cards */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Card Color Patterns */
+  .card-1 {
+    background: linear-gradient(135deg, #ff8a80, #ff1744); /* Gradient from pink to red */
+  }
+  
+  .card-2 {
+    background: linear-gradient(135deg, #82b1ff, #448aff); /* Gradient from light blue to blue */
+  }
+  
+  .card-3 {
+    background: linear-gradient(135deg, #a5d6a7, #66bb6a); /* Gradient from light green to green */
+  }
+  
+  .card-4 {
+    background: linear-gradient(135deg, #ffab91, #ff7043); /* Gradient from light orange to orange */
+  }
+  
+  .card-5 {
+    background: linear-gradient(135deg, #dce775, #c0ca33); /* Gradient from light green to yellow-green */
+  }
+  
+  .card-6 {
+    background: linear-gradient(135deg, #80deea, #26c6da); /* Gradient from light cyan to cyan */
+  }
+  
+  .channel-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .channel-icon {
+    font-size: 40px;
+    color: white; /* White icons on gradient backgrounds */
+    margin-bottom: 15px;
+  }
+  
+  .channel-info h3 {
+    font-size: 1.8em;
+    color: #ffffff; /* White text for contrast */
+    margin-bottom: 10px;
+  }
+  
+  .channel-info p {
+    font-size: 1.2em;
+    color: #ffffff; /* White text for contrast */
+    margin-bottom: 20px;
+  }
+  
+  .join-channel-button {
+    background-color: #ffffff; /* White background */
+    color: #00796b; /* Teal text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .join-channel-button:hover {
+    background-color: #00796b; /* Teal background on hover */
+    color: #ffffff; /* White text on hover */
+  }
 
 
