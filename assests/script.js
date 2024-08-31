@@ -53,3 +53,15 @@ document.querySelector('.navbar-toggle').addEventListener('click', function() {
     document.querySelector('.navbar-menu ul').classList.toggle('show');
   });
 
+
+
+document.querySelectorAll('.game-card').forEach(card => {
+  const video = card.querySelector('.gameplay');
+  card.addEventListener('mouseover', () => {
+      video.play();
+  });
+  card.addEventListener('mouseout', () => {
+      video.pause();
+      video.currentTime = 0; // Reset the video to the beginning
+  });
+});
