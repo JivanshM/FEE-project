@@ -368,7 +368,7 @@
     
     @media screen and (max-width: 480px) {
       .featured-games {
-        height: 40vh;
+        height: 26vh;
         padding: 1vh;
         border-radius: 10px;
       }
