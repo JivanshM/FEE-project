@@ -7,7 +7,7 @@
   body {
     font-family: Arial, sans-serif;
     /* background-image: url(/assests/scroll-bg.jpg); */
-    background-color: #17351ea5;
+    background-color: #0c0c0ca5;
   }
   
   /* Navbar styling */
@@ -539,10 +539,10 @@
   }
   
   .carousel img {
-    width: 100px; /* Size of each icon */
-    height: 100px; /* Size of each icon */
-    object-fit: cover; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for icons */
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 8px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -551,16 +551,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
   }
   
-  /* Optional: Hide scrollbar for a cleaner look */
+  
   .carousel-wrapper::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+    display: none; 
   }
   
   
   
-  /* Voice Channels Section */
+
   .voice-channels-section {
-    background-color: #e0f2f1; /* Light green background */
+    background-color: #e0f2f1; 
     padding: 20px;
     text-align: center;
     margin-left: 1vw;
@@ -570,7 +570,7 @@
   
   .voice-channels-section h2 {
     font-size: 2.5em;
-    color: #004d40; /* Darker green color */
+    color: #004d40;
     margin-bottom: 20px;
   }
   
@@ -578,70 +578,70 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between cards */
+    gap: 20px;
   }
   
   .channel-card {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Fixed width for cards */
+    width: 300px; 
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  /* Card Color Patterns */
+ 
   .card-1 {
-    background: linear-gradient(135deg, #ff8a80, #ff1744); /* Gradient from pink to red */
+    background: linear-gradient(135deg, #ff8a80, #ff1744); 
   }
   
   .card-2 {
-    background: linear-gradient(135deg, #82b1ff, #448aff); /* Gradient from light blue to blue */
+    background: linear-gradient(135deg, #82b1ff, #448aff); 
   }
   
   .card-3 {
-    background: linear-gradient(135deg, #a5d6a7, #66bb6a); /* Gradient from light green to green */
+    background: linear-gradient(135deg, #a5d6a7, #66bb6a); 
   }
   
   .card-4 {
-    background: linear-gradient(135deg, #ffab91, #ff7043); /* Gradient from light orange to orange */
+    background: linear-gradient(135deg, #ffab91, #ff7043); 
   }
   
   .card-5 {
-    background: linear-gradient(135deg, #dce775, #c0ca33); /* Gradient from light green to yellow-green */
+    background: linear-gradient(135deg, #dce775, #c0ca33); 
   }
   
   .card-6 {
-    background: linear-gradient(135deg, #80deea, #26c6da); /* Gradient from light cyan to cyan */
+    background: linear-gradient(135deg, #80deea, #26c6da); 
   }
   
   .channel-card:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
+    transform: translateY(-5px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
   .channel-icon {
     font-size: 40px;
-    color: white; /* White icons on gradient backgrounds */
+    color: white; 
     margin-bottom: 15px;
   }
   
   .channel-info h3 {
     font-size: 1.8em;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff; 
     margin-bottom: 10px;
   }
   
   .channel-info p {
     font-size: 1.2em;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff; 
     margin-bottom: 20px;
   }
   
   .join-channel-button {
-    background-color: #ffffff; /* White background */
-    color: #00796b; /* Teal text color */
+    background-color: #ffffff; 
+    color: #00796b; 
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -651,8 +651,8 @@
   }
   
   .join-channel-button:hover {
-    background-color: #00796b; /* Teal background on hover */
-    color: #ffffff; /* White text on hover */
+    background-color: #00796b; 
+    color: #ffffff; 
   }
 
 
@@ -676,12 +676,12 @@
   .video-container {
     display: flex;
     overflow-x: auto;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    scrollbar-width: none; 
     padding-top: 20px;
   }
   
   .video-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+    display: none;
   }
   
   .video-item {
@@ -693,7 +693,7 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    background-color: #000; /* Fallback background color */
+    background-color: #000; 
   }
   
   .video-item img {
@@ -806,19 +806,19 @@
 .quiz-container {
     display: flex;
     overflow-x: auto;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    scrollbar-width: none; 
     padding-top: 20px;
 }
 
 .quiz-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+    display: none; 
 }
 
 .quiz-item {
     position: relative;
     flex: 0 0 auto;
-    width: 300px; /* Adjust width as needed */
-    height: 250px; /* Adjust height as needed */
+    width: 300px; 
+    height: 250px; 
     margin-right: 15px;
     overflow: hidden;
     border-radius: 10px;
@@ -880,7 +880,7 @@
 
 .quiz-item:hover .quiz-icon {
     transform: scale(1.2);
-    background-color: rgb(50, 49, 49); /* Change the background color on hover */
+    background-color: rgb(50, 49, 49); 
 }
 
 .quiz-icon:hover {
@@ -988,4 +988,24 @@
     font-size: 0.9em;
 }
 
-  
+
+/*for feedback button by aryan*/
+.footer-feedback {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.feedback-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f39c12; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-button:hover {
+  background-color: #e67e22;
+}
