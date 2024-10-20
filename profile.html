@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Gaming Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white min-h-screen flex items-center justify-center">
+    <div class="bg-gray-900 rounded-lg shadow-lg p-6 max-w-md w-full">
+        <div class="flex flex-col items-center">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="rounded-full mb-4">
+            <h2 class="text-2xl font-semibold">Username</h2>
+            <p class="text-gray-400">Email: user@example.com</p>
+            <p class="text-gray-400">Joined: January 2023</p>
+        </div>
+        <div class="mt-6">
+            <h3 class="text-xl font-semibold mb-2">Game Statistics</h3>
+            <ul class="list-disc ml-5">
+                <li>Games Played: 150</li>
+                <li>Wins: 75</li>
+                <li>Losses: 25</li>
+                <li>Favorite Genre: Action</li>
+            </ul>
+        </div>
+        <div class="mt-6">
+            <h3 class="text-xl font-semibold mb-2">Favorite Games</h3>
+            <ul class="list-disc ml-5">
+                <li>GTA 5</li>
+                <li>COD BO</li>
+                <li>THE LAST OF US</li>
+                
+            </ul>
+        </div>
+        <div class="mt-6">
+    
+            <button id="logoutButton" class="w-full bg-red-600 p-2 rounded text-white hover:bg-red-500 transition mt-2">
+                Logout
+            </button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('logoutButton').addEventListener('click', function() {
+           .
+            window.location.href = '/index.html'; 
+        });
+    </script>
+</body>
+</html>
