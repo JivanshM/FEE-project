@@ -6,11 +6,37 @@
     <title>Feedback Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assests/feedback.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("P9z1hDU0UgUh0X3jD"); // Replace with your public key
+        })();
+
+        function sendEmail(e) {
+            e.preventDefault();
+
+            const form = e.target;
+
+            emailjs.send("service_yemb6ko", "template_hv9667k", {
+                name: form.name.value,
+                email: form.email.value,
+                rating: form.rating.value,
+                recommend: form.recommend.value,
+                comments: form.comments.value
+            })
+            .then((result) => {
+                alert('Feedback sent successfully!');
+                form.reset();
+            }, (error) => {
+                alert('Error sending feedback: ' + error.text);
+            });
+        }
+    </script>
 </head>
 <body>
     <div class="feedback-container">
         <h2><i class="fas fa-comment-dots"></i> Feedback Form</h2>
-        <form action="#" method="post">
+        <form onsubmit="sendEmail(event)" method="post">
             <div class="input-group">
                 <label for="name"><i class="fas fa-user"></i> Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -40,7 +66,7 @@
                 <label for="comments"><i class="fas fa-comments"></i> Comments:</label>
                 <textarea id="comments" name="comments" rows="4" required></textarea>
             </div>
-            <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i><a href="/FEE-project-main/index.html">Submit Feedback</a></button>
+            <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Submit Feedback</button>
         </form>
         <div class="follow-us">
             <a href="#" class="follow-btn"><i class="fas fa-share-alt"></i> Follow Us</a>
