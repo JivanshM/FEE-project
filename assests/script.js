@@ -65,3 +65,14 @@ document.querySelectorAll('.game-card').forEach(card => {
       video.currentTime = 0; // Reset the video to the beginning
   });
 });
+
+
+
+
+function addFriend(id) {
+  document.getElementById(id).innerText = "Friend";
+}
+
+function removeFriend(id) {
+  document.getElementById(id).innerText = "Stranger";
+}
